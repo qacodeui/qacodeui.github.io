@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Google Analytics version 4 </title>
+  
+  <script src="https://www.googletagmanager.com/gtag/js?id=G-FDDGHZL6B1"></script>
+<script type="text/javascript">
+    
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-FDDGHZL6B1');
+</script>
+  
+</head>
+<body>
+	
+<p> Qamtl Projet _QA_MTL [33487] </p>
+<p> Ecommerce </p>
+
+<p> Contactid 2 </p>
+<p>lmorissette4@repsolution.com </p>
+<p>Cle: dKsDJL </p>
+
+        </br>
+	<script type="text/javascript">
+gtag("event", "purchase", {
+        transaction_id: "tga4-4",
+        value: 24.23,
+        tax: 2.23,
+        shipping: 41.96,
+        currency: "CAD",
+        items: [
+            {
+                item_id: "SKU_monid_4",
+                item_name: "un produit",
+                affiliation: "Lyne co",
+                index: 0,
+                item_brand: "Lyne brand",
+                item_category: "machin_4 category",
+                item_category2: "machin_4 category 2",
+                item_category3: "machin_4 category 3",
+                item_category4: "machin_4 category 4",
+                item_category5: "machin_4 category 5",
+                item_list_id: "related_products 4",
+                item_list_name: "Related Products 4",
+                item_variant: "blue",
+                price: 40.30,
+                quantity: 4
+            }]
+    });
+
+
+</script>
+ 
+</body>
+</html>
