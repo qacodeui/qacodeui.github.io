@@ -11,7 +11,7 @@
   
 </head>
 <body>
-<p>Google Analytics version 4</p>
+<p>Google Analytics version 3</p>
     <input type="button" value="Transaction" onclick="processTransaction()">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-257802008-1"></script>
@@ -33,36 +33,36 @@
 
             ga('ecommerce:addTransaction', {
                 'id': '123o',                     // Transaction ID. Required.
-                'affiliation': 'Acme Clothing',   // Affiliation or store name.
-                'revenue': '11.99',               // Grand Total.
+                'affiliation': 'CISZ Store',   // Affiliation or store name.
+                'revenue': '110.99',               // Grand Total.
                 'shipping': '5',                  // Shipping.
                 'tax': '1.29'                     // Tax.
             });
 
             ga('ecommerce:addItem', {
                 'id': '123o',                     // Transaction ID. Required.
-                'name': 'Fluffy Pink Bunnies',    // Product name. Required.
-                'sku': 'DD23444',                 // SKU/code.
-                'category': 'Party Toys',         // Category or variation.
-                'price': '11.99',                 // Unit price.
+                'name': 'Product 1',    // Product name. Required.
+                'sku': 'DD1',                 // SKU/code.
+                'category': 'Category 01',         // Category or variation.
+                'price': '31.99',                 // Unit price.
                 'quantity': '1'                   // Quantity.
             });
 
             ga('ecommerce:addItem', {
                 'id': '123o',                     // Transaction ID. Required.
-                'name': 'Fluffy Pink Bunnies',    // Product name. Required.
-                'sku': 'DD23444',                 // SKU/code.
-                'category': 'Party Toys',         // Category or variation.
-                'price': '11.99',                 // Unit price.
+                'name': 'Product 1',    // Product name. Required.
+                'sku': 'DD1',                 // SKU/code.
+                'category': 'Category 01',         // Category or variation.
+                'price': '31.99',                 // Unit price.
                 'quantity': '3'                   // Quantity.
             });
 
             ga('ecommerce:addItem', {
                 'id': '123o',                     // Transaction ID. Required.
-                'name': 'Product Etienne 1',      // Product name. Required.
-                'sku': 'DD234449',                 // SKU/code.
-                'category': 'Category 3',         // Category or variation.
-                'price': '31.99',                 // Unit price.
+                'name': 'Product 2',      // Product name. Required.
+                'sku': 'DD2',                 // SKU/code.
+                'category': 'Category 03',         // Category or variation.
+                'price': '33.99',                 // Unit price.
                 'quantity': '2'                   // Quantity.
             });
 
