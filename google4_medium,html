@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Google Analytics version 4 </title>
+
+  
+</head>
+<body>
+	
+<p> Qamtl Projet _QA_MTL [33487] </p>
+<p>Google Analytics version 4</p>
+<p> Ecommerce </p>
+
+<p> Contactid 2 </p>
+<p>lmorissette4@repsolution.com </p>
+<p>Cle: dKsDJL </p>
+
+        </br>
+	<body>
+
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-SYDKNCX94E"></script>
+    <script type="text/javascript">
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-SYDKNCX94E');
+
+    gtag("event", "purchase", {
+        transaction_id: "QA_transac_medium_ga4-4",
+        value: 44.23,
+        tax: 2.23,
+        shipping: 2.96,
+        currency: "USD",
+        items: [
+            {
+                item_id: "SKU_monid4 UTM medium",
+                item_name: "Product QA 1",
+                affiliation: "Cisz co",
+                index: 0,
+                item_brand: "CISZ brand",
+                item_category: "Category",
+                item_category2: "Category 02",
+                item_category3: "Category 03",
+                item_category4: "Category 04",
+                item_category5: "Category 05",
+                item_list_id: "related_products 2",
+                item_list_name: "Related Products 2",
+                item_variant: "blue",
+                price: 43.44,
+                quantity: 1
+            }]
+    });
+    </script>
+
+</body>
+</html>
