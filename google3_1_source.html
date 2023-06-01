@@ -11,7 +11,7 @@
 <p>Google Analytics version 3 - Source </p>
     <input type="button" value="Transaction" onclick="processTransaction()">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-257802008-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-257802008-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -19,15 +19,10 @@
 
   gtag('config', 'UA-257802008-1');
 </script>
-
-
-
+  
     <script type="text/javascript">
-
         function processTransaction() {
-
            ga('require', 'ecommerce');
-
             ga('ecommerce:addTransaction', {
                 'id': 'G3_2025-1Source',                     // Transaction ID. Required.
                 'affiliation': 'Source Mon QA Store',   // Affiliation or store name.
@@ -35,7 +30,6 @@
                 'shipping': '5',                  // Shipping.
                 'tax': '211.29'                     // Tax.
             });
-
             ga('ecommerce:addItem', {
                 'id': '2025-2Source,                     // Transaction ID. Required.
                 'name': 'Source Product QA 1',    // Product name. Required.
@@ -53,12 +47,8 @@
                 'price': '231.99',                 // Unit price.
                 'quantity': '3'                   // Quantity.
             });
-
-          
-
             ga('ecommerce:send');
         }
-
     </script>
 
 </body>
