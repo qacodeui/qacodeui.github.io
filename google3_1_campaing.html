@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Google Analytics version 3 - campaign  </title>  
+
+
+
+  
+</head>
+<body>
+<p>Google Analytics version 3 - campaign </p>
+    <input type="button" value="Transaction" onclick="processTransaction()">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-257802008-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-257802008-1');
+</script>
+
+
+
+    <script type="text/javascript">
+
+        function processTransaction() {
+
+            
+          ga('require', 'ecommerce');
+          
+            ga('ecommerce:addTransaction', {
+                'id': '2025-222campaign',                     // Transaction ID. Required.
+                'affiliation': 'Term Mon QA Store',   // Affiliation or store name.
+                'revenue': '310.99',               // Grand Total.
+                'shipping': '5',                  // Shipping.
+                'tax': '25.29'                     // Tax.
+            });
+
+            ga('ecommerce:addItem', {
+                'id': '2025-231campaign,                     // Transaction ID. Required.
+                'name': 'campaign Product QA 1',    // Product name. Required.
+                'sku': 'DD11',                 // SKU/code.
+                'category': 'Category QA 010',         // Category or variation.
+                'price': '135.99',                 // Unit price.
+                'quantity': '1'                   // Quantity.
+            });
+
+            ga('ecommerce:addItem', {
+                'id': '2025-221campaign',                     // Transaction ID. Required.
+                'name': 'campaign Product QA 2',    // Product name. Required.
+                'sku': 'DD1',                 // SKU/code.
+                'category': 'Category QA 02',         // Category or variation.
+                'price': '431.99',                 // Unit price.
+                'quantity': '3'                   // Quantity.
+            });
+
+          
+
+            ga('ecommerce:send');
+        }
+
+    </script>
+
+</body>
+</html>
