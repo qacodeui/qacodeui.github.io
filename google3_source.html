@@ -5,13 +5,10 @@
   <meta charset=utf-8 />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Google Analytics version 3 - Test 10  </title>  
-
-
-
   
 </head>
 <body>
-<p>Google Analytics version 3 - Term </p>
+<p>Google Analytics version 3 - Source </p>
     <input type="button" value="Transaction" onclick="processTransaction()">
 
  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-257802008-1"></script>
@@ -35,7 +32,7 @@
            ga('require', 'ecommerce');
 
             ga('ecommerce:addTransaction', {
-                'id': 'G32025-1S',                     // Transaction ID. Required.
+                'id': 'G3-1Source',                     // Transaction ID. Required.
                 'affiliation': 'Source Mon QA Store',   // Affiliation or store name.
                 'revenue': '2110.99',               // Grand Total.
                 'shipping': '5',                  // Shipping.
@@ -43,7 +40,7 @@
             });
 
             ga('ecommerce:addItem', {
-                'id': '2025-2S,                     // Transaction ID. Required.
+                'id': 'G3Source_1',                     // Transaction ID. Required.
                 'name': 'Source Product QA 1',    // Product name. Required.
                 'sku': 'DD10',                 // SKU/code.
                 'category': 'Category QA 01',         // Category or variation.
@@ -52,7 +49,7 @@
             });
 
             ga('ecommerce:addItem', {
-                'id': '2025-3S',                     // Transaction ID. Required.
+                'id': 'G3Source_2',                      // Transaction ID. Required.
                 'name': 'Source Product QA 2',    // Product name. Required.
                 'sku': 'DD1',                 // SKU/code.
                 'category': 'Category QA 02',         // Category or variation.
