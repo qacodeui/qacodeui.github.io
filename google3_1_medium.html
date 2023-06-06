@@ -22,7 +22,6 @@
         ga('create', 'UA-257802008-1', 'qacodeui.github.io');
 </script>
 
-
     <script type="text/javascript">
 
         function processTransaction() {
@@ -30,7 +29,7 @@
            ga('require', 'ecommerce');
 
             ga('ecommerce:addTransaction', {
-                'id': 'G32025-1Medium',                     // Transaction ID. Required.
+                'id': 'G3_Medium',                     // Transaction ID. Required.
                 'affiliation': 'Medium Mon QA Store',   // Affiliation or store name.
                 'revenue': '3110.99',               // Grand Total.
                 'shipping': '5',                  // Shipping.
@@ -38,7 +37,7 @@
             });
 
             ga('ecommerce:addItem', {
-                'id': '2025-2Medium,                     // Transaction ID. Required.
+                'id': 'G3_2Medium',                     // Transaction ID. Required.
                 'name': 'Medium Product QA 1',    // Product name. Required.
                 'sku': 'DD10',                 // SKU/code.
                 'category': 'Category QA 01',         // Category or variation.
@@ -47,15 +46,13 @@
             });
 
             ga('ecommerce:addItem', {
-                'id': '2025-3Medium',                     // Transaction ID. Required.
+                'id': 'G3_3Medium',                     // Transaction ID. Required.
                 'name': 'Medium Product QA 2',    // Product name. Required.
                 'sku': 'DD1',                 // SKU/code.
                 'category': 'Category QA 02',         // Category or variation.
                 'price': '231.99',                 // Unit price.
                 'quantity': '3'                   // Quantity.
-            });
-
-          
+            });          
 
             ga('ecommerce:send');
         }
