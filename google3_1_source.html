@@ -27,14 +27,14 @@
         function processTransaction() {
            ga('require', 'ecommerce');
             ga('ecommerce:addTransaction', {
-                'id': 'G3_2025-1Source',                     // Transaction ID. Required.
+                'id': 'G3_Source',                     // Transaction ID. Required.
                 'affiliation': 'Source Mon QA Store',   // Affiliation or store name.
                 'revenue': '2110.99',               // Grand Total.
                 'shipping': '5',                  // Shipping.
                 'tax': '211.29'                     // Tax.
             });
             ga('ecommerce:addItem', {
-                'id': '2025-2Source,                     // Transaction ID. Required.
+                'id': 'G3_1Source',                     // Transaction ID. Required.
                 'name': 'Source Product QA 1',    // Product name. Required.
                 'sku': 'DD101',                 // SKU/code.
                 'category': 'Category QA 01',         // Category or variation.
@@ -43,7 +43,7 @@
             });
 
             ga('ecommerce:addItem', {
-                'id': '2025-3Source',                     // Transaction ID. Required.
+                'id': 'G3_2Source',                     // Transaction ID. Required.
                 'name': 'Source Product QA 2',    // Product name. Required.
                 'sku': 'DD102',                 // SKU/code.
                 'category': 'Category QA 02',         // Category or variation.
