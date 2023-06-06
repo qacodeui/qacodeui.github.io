@@ -4,11 +4,7 @@
 <head>
   <meta charset=utf-8 />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Google Analytics version 3 - campaign  </title>  
-
-
-
-  
+  <title> Google Analytics version 3 - campaign  </title>   
 </head>
 <body>
 <p>Google Analytics version 3 - Term </p>
@@ -26,16 +22,12 @@
         ga('create', 'UA-257802008-1', 'qacodeui.github.io');
 </script>
 
-
     <script type="text/javascript">
-
-        function processTransaction() {
-
-            
+        function processTransaction() {            
           ga('require', 'ecommerce');
           
             ga('ecommerce:addTransaction', {
-                'id': 'G32025-222campaign',                     // Transaction ID. Required.
+                'id': 'G3_campaign',                     // Transaction ID. Required.
                 'affiliation': 'Term Mon QA Store',   // Affiliation or store name.
                 'revenue': '310.99',               // Grand Total.
                 'shipping': '5',                  // Shipping.
@@ -43,8 +35,8 @@
             });
 
             ga('ecommerce:addItem', {
-                'id': '2025-231campaign,                     // Transaction ID. Required.
-                'name': 'campaign Product QA 1',    // Product name. Required.
+                'id': 'G3_1Campaign',                     // Transaction ID. Required.
+                'name': 'Campaign Product QA 1',    // Product name. Required.
                 'sku': 'DD11',                 // SKU/code.
                 'category': 'Category QA 010',         // Category or variation.
                 'price': '135.99',                 // Unit price.
@@ -52,15 +44,13 @@
             });
 
             ga('ecommerce:addItem', {
-                'id': '2025-221campaign',                     // Transaction ID. Required.
+                'id': 'G3_2Campaign',                     // Transaction ID. Required.
                 'name': 'campaign Product QA 2',    // Product name. Required.
                 'sku': 'DD1',                 // SKU/code.
                 'category': 'Category QA 02',         // Category or variation.
                 'price': '431.99',                 // Unit price.
                 'quantity': '3'                   // Quantity.
-            });
-
-          
+            });         
 
             ga('ecommerce:send');
         }
