@@ -4,11 +4,7 @@
 <head>
   <meta charset=utf-8 />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Google Analytics version 3 - Test 10  </title>  
-
-
-
-  
+  <title> Google Analytics version 3 - Test 10  </title>    
 </head>
 <body>
 <p>Google Analytics version 3 - Term </p>
@@ -26,8 +22,6 @@
         ga('create', 'UA-257802008-1', 'qacodeui.github.io');
 </script>
 
-
-
     <script type="text/javascript">
 
         function processTransaction() {
@@ -35,7 +29,7 @@
             ga('require', 'ecommerce');
 
             ga('ecommerce:addTransaction', {
-                'id': 'G3_2025-1Term',                     // Transaction ID. Required.
+                'id': 'G3_Term',                     // Transaction ID. Required.
                 'affiliation': 'Term Mon QA Store',   // Affiliation or store name.
                 'revenue': '2110.99',               // Grand Total.
                 'shipping': '5',                  // Shipping.
@@ -43,7 +37,7 @@
             });
 
             ga('ecommerce:addItem', {
-                'id': '2025-2T,                     // Transaction ID. Required.
+                'id': 'G3_1Term',                     // Transaction ID. Required.
                 'name': 'Term Product QA 1',    // Product name. Required.
                 'sku': 'DD10',                 // SKU/code.
                 'category': 'Category QA 01',         // Category or variation.
@@ -52,15 +46,14 @@
             });
 
             ga('ecommerce:addItem', {
-                'id': '2025-3T',                     // Transaction ID. Required.
+                'id': 'G3_2Term',                     // Transaction ID. Required.
                 'name': 'Term Product QA 2',    // Product name. Required.
                 'sku': 'DD1',                 // SKU/code.
                 'category': 'Category QA 02',         // Category or variation.
                 'price': '231.99',                 // Unit price.
                 'quantity': '3'                   // Quantity.
             });
-
-          
+         
 
             ga('ecommerce:send');
         }
