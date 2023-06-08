@@ -4,7 +4,7 @@
 <head>
   <meta charset=utf-8 />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Google Analytics version 3 - Test 10  </title>  
+  <title> Google Analytics version 3 - Test 10  </title>    
 </head>
 <body>
 <p>Google Analytics version 3 - Term </p>
@@ -22,37 +22,37 @@
         ga('create', 'UA-257802008-1', 'qacodeui.github.io');
 </script>
 
+
     <script type="text/javascript">
 
-        function processTransaction() {
-
-           ga('require', 'ecommerce');
-
+        function processTransaction() {            
+          ga('require', 'ecommerce');
+          
             ga('ecommerce:addTransaction', {
-                'id': 'G3_Medium',                     // Transaction ID. Required.
-                'affiliation': 'Medium Mon QA Store',   // Affiliation or store name.
-                'revenue': '3110.99',               // Grand Total.
-                'shipping': '5',                  // Shipping.
-                'tax': '511.29'                     // Tax.
+                'id': 'G3_Medium_2023',                     // Transaction ID. Required.
+                'affiliation': 'Term QA Store',   // Affiliation or store name.
+                'revenue': '5110.99',               // Grand Total.
+                'shipping': '2',                  // Shipping.
+                'tax': '215.29'                     // Tax.
             });
 
             ga('ecommerce:addItem', {
-                'id': 'G3_2Medium',                     // Transaction ID. Required.
-                'name': 'Medium Product QA 1',    // Product name. Required.
+                'id': 'G3_Medium_item1',                     // Transaction ID. Required.
+                'name': 'Medium 1 Product QA 1',    // Product name. Required.
                 'sku': 'DD10',                 // SKU/code.
                 'category': 'Category QA 01',         // Category or variation.
-                'price': '141.99',                 // Unit price.
+                'price': '153.99',                 // Unit price.
                 'quantity': '1'                   // Quantity.
             });
 
             ga('ecommerce:addItem', {
-                'id': 'G3_3Medium',                     // Transaction ID. Required.
-                'name': 'Medium Product QA 2',    // Product name. Required.
+                'id': 'G3_Medium_item2',                     // Transaction ID. Required.
+                'name': 'Medium 2 Product QA 2',    // Product name. Required.
                 'sku': 'DD1',                 // SKU/code.
                 'category': 'Category QA 02',         // Category or variation.
-                'price': '231.99',                 // Unit price.
+                'price': '253.99',                 // Unit price.
                 'quantity': '3'                   // Quantity.
-            });          
+            });  
 
             ga('ecommerce:send');
         }
