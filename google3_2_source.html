@@ -8,7 +8,7 @@
   
 </head>
 <body>
-<p>Google Analytics version 3 - Term </p>
+<p>Google Analytics version 3 - Source </p>
     <input type="button" value="Transaction" onclick="processTransaction()">
 
  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-257802008-1"></script>
@@ -27,27 +27,27 @@
         function processTransaction() {
            ga('require', 'ecommerce');
             ga('ecommerce:addTransaction', {
-                'id': 'G3_Source',                     // Transaction ID. Required.
+                'id': 'G3_Source_00',                     // Transaction ID. Required.
                 'affiliation': 'Source Mon QA Store',   // Affiliation or store name.
-                'revenue': '2110.99',               // Grand Total.
+                'revenue': '7110.99',               // Grand Total.
                 'shipping': '5',                  // Shipping.
                 'tax': '211.29'                     // Tax.
             });
             ga('ecommerce:addItem', {
-                'id': 'G3_1Source',                     // Transaction ID. Required.
-                'name': 'Source Product QA 1',    // Product name. Required.
+                'id': 'G3_1Source_01',                     // Transaction ID. Required.
+                'name': 'Source Product QA 01',    // Product name. Required.
                 'sku': 'DD101',                 // SKU/code.
                 'category': 'Category QA 01',         // Category or variation.
-                'price': '131.99',                 // Unit price.
+                'price': '1031.99',                 // Unit price.
                 'quantity': '1'                   // Quantity.
             });
 
             ga('ecommerce:addItem', {
-                'id': 'G3_2Source',                     // Transaction ID. Required.
-                'name': 'Source Product QA 2',    // Product name. Required.
+                'id': 'G3_2Source_02',                     // Transaction ID. Required.
+                'name': 'Source Product QA 02',    // Product name. Required.
                 'sku': 'DD102',                 // SKU/code.
                 'category': 'Category QA 02',         // Category or variation.
-                'price': '231.99',                 // Unit price.
+                'price': '2310.99',                 // Unit price.
                 'quantity': '3'                   // Quantity.
             });
             ga('ecommerce:send');
