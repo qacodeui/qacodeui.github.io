@@ -7,7 +7,7 @@
   <title> Google Analytics version 3 - Test 10  </title>    
 </head>
 <body>
-<p>Google Analytics version 3 - Term </p>
+<p>Google Analytics version 3 - Medium </p>
     <input type="button" value="Transaction" onclick="processTransaction()">
 
  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-257802008-1"></script>
@@ -29,16 +29,16 @@
           ga('require', 'ecommerce');
           
             ga('ecommerce:addTransaction', {
-                'id': 'G3_Medium_2023',                     // Transaction ID. Required.
-                'affiliation': 'Term QA Store',   // Affiliation or store name.
-                'revenue': '5110.99',               // Grand Total.
+                'id': 'G3_Medium_2023_06_09',                     // Transaction ID. Required.
+                'affiliation': 'Medium QA Store',   // Affiliation or store name.
+                'revenue': '110.99',               // Grand Total.
                 'shipping': '2',                  // Shipping.
                 'tax': '215.29'                     // Tax.
             });
 
             ga('ecommerce:addItem', {
-                'id': 'G3_Medium_item1',                     // Transaction ID. Required.
-                'name': 'Medium 1 Product QA 1',    // Product name. Required.
+                'id': 'G3_Medium_item_01',                     // Transaction ID. Required.
+                'name': 'Medium 1 Product QA 01',    // Product name. Required.
                 'sku': 'DD10',                 // SKU/code.
                 'category': 'Category QA 01',         // Category or variation.
                 'price': '153.99',                 // Unit price.
@@ -46,8 +46,8 @@
             });
 
             ga('ecommerce:addItem', {
-                'id': 'G3_Medium_item2',                     // Transaction ID. Required.
-                'name': 'Medium 2 Product QA 2',    // Product name. Required.
+                'id': 'G3_Medium_item_02',                     // Transaction ID. Required.
+                'name': 'Medium 2 Product QA 02',    // Product name. Required.
                 'sku': 'DD1',                 // SKU/code.
                 'category': 'Category QA 02',         // Category or variation.
                 'price': '253.99',                 // Unit price.
